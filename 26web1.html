@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym</title>
+    <style>
+        /* css reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('c.jpg');
+            height: max-content;
+            color: rgb(255, 255, 255);
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 25px;
+            top: 20px;
+        }
+
+        .mid {
+            display: block;
+            width: 51%;
+            margin: 20px 220px;
+            /* border: 2px solid rgb(95, 212, 66); */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            /* border: 2px solid rgb(179, 255, 0); */
+            display: inline-block;
+        }
+
+        .navbar {
+            display: inline-block;
+            margin: 6px 0px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: rgb(253, 253, 253);
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .left img {
+            text-align: center;
+            width: 136px;
+            filter: invert();
+            border: 3px solid rgba(255, 0, 0, 0);
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 19px;
+            font-size: 26px;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: gray;
+        }
+
+        .container {
+            line-height: 42px;
+            /* border: 2px solid pink; */
+            padding: 75px;
+            margin: 150px 3px;
+            width: 37%;
+            border-radius: 28px
+        }
+
+        h3 {
+            font-size: xx-large;
+            text-align: 40px 10px;
+            /* margin: auto; */
+        }
+
+        .container button {
+            display: block;
+            width: 23%;
+            margin: auto;
+        }
+
+        .formg input {
+            text-align: center;
+            display: block;
+            width: 500px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 3px auto;
+            border-radius: 8 px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img.svg" alt="">
+            <div>Mayank Fitnees</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join The Best Gym Of Harda</h3>
+        <form action="my.py">
+            <div class="formg">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="formg">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="formg">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="formg">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
